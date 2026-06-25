@@ -425,19 +425,16 @@ a {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 25px var(--shadow-soft);
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.88);
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .video-item video {
   width: 100%;
   display: block;
-  aspect-ratio: auto;
+  aspect-ratio: 9 / 16;
   object-fit: contain;
-  max-height: 70vh;
+  object-position: center;
 }
 
 .video-overlay {
