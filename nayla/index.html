@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Nayla Aulia Zahra</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== WELCOME SCREEN ========== -->
+  <div id="welcome-screen">
+    <div class="welcome-content">
+      <div class="welcome-floral">&#x2734;</div>
+      <h1 class="welcome-title">Untuk Nayla Aulia Zahra</h1>
+      <p class="welcome-subtitle">Sebuah tempat kecil yang menyimpan sebagian dari perjalanan kita sejak Juli 2023.</p>
+      <button id="welcome-btn" class="welcome-btn">Mulai</button>
+    </div>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero">
+    <!-- Floating particles container -->
+    <div id="particles-container"></div>
+
+    <div class="hero-content">
+      <p class="hero-greeting" data-aos="fade-down" data-aos-delay="300">Untuk</p>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="500">
+        Nayla Aulia Zahra
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="700">
+        Terima kasih sudah menjadi bagian dari perjalanan hidupku selama hampir tiga tahun terakhir. Website ini dibuat untuk menyimpan sebagian kecil dari kenangan yang telah kita lalui bersama.
+      </p>
+      <div class="hero-decoration" data-aos="fade-up" data-aos-delay="900">
+        <span class="decoration-line"></span>
+        <span class="decoration-flower">&#x2734;</span>
+        <span class="decoration-line"></span>
+      </div>
+    </div>
+
+    <a href="#gallery" class="scroll-down" data-aos="fade-up" data-aos-delay="1200">
+      <span>Gulir ke bawah</span>
+      <span class="scroll-arrow">&#x276F;</span>
+    </a>
+  </section>
+
+  <!-- ========== GALERI FOTO ========== -->
+  <section id="gallery" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Galeri Foto</h2>
+      <div class="section-divider">
+        <span class="divider-line"></span>
+        <span class="divider-flower">&#x2734;</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="section-desc">Beberapa momen yang berhasil kita abadikan, dan banyak cerita yang akan selalu kita ingat.</p>
+    </div>
+
+    <!-- ✿ GANTI: ganti file foto di folder images/ ✿ -->
+    <div class="gallery-grid">
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/foto1.jpg" alt="Foto 1" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/foto2.jpg" alt="Foto 2" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/foto3.jpg" alt="Foto 3" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/foto4.jpg" alt="Foto 4" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/foto5.jpg" alt="Foto 5" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/foto6.jpg" alt="Foto 6" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LIGHTBOX MODAL ========== -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="" />
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <!-- ========== GALERI VIDEO ========== -->
+  <section id="video" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Galeri Video</h2>
+      <div class="section-divider">
+        <span class="divider-line"></span>
+        <span class="divider-flower">&#x2734;</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="section-desc">Potongan-potongan kecil dari perjalanan yang pernah kita jalani bersama.</p>
+    </div>
+
+    <!-- ✿ GANTI: ganti file video di folder video/ ✿ -->
+    <div class="video-grid">
+      <div class="video-item" data-aos="zoom-in" data-aos-delay="100">
+        <video class="custom-video" src="video/video1.mp4" muted playsinline></video>
+        <div class="video-overlay">
+          <button class="video-play-btn" aria-label="Play video">&#9654;</button>
+        </div>
+        <p class="video-label">Video 1</p>
+      </div>
+      <div class="video-item" data-aos="zoom-in" data-aos-delay="200">
+        <video class="custom-video" src="video/video2.mp4" muted playsinline></video>
+        <div class="video-overlay">
+          <button class="video-play-btn" aria-label="Play video">&#9654;</button>
+        </div>
+        <p class="video-label">Video 2</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIMELINE "CERITA KAMI" ========== -->
+  <section id="timeline" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Cerita Kami</h2>
+      <div class="section-divider">
+        <span class="divider-line"></span>
+        <span class="divider-flower">&#x2734;</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="section-desc">Setiap momen adalah mahakarya cinta kita</p>
+    </div>
+
+    <div class="timeline-container">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-date">Juli 2023</div>
+        <div class="timeline-content">
+          <h3>Awal Cerita</h3>
+          <p>Perkenalan yang sederhana, tetapi menjadi awal dari banyak hal baik yang datang setelahnya.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-date">Desember 2023</div>
+        <div class="timeline-content">
+          <h3>Akhir Tahun Pertama</h3>
+          <p>Menutup tahun dengan lebih banyak cerita, pengalaman, dan pelajaran yang kita lalui bersama.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-date">Juni 2024</div>
+        <div class="timeline-content">
+          <h3>Satu Tahun Bersama</h3>
+          <p>Satu tahun yang mengajarkan banyak hal tentang memahami, mendengarkan, dan bertumbuh bersama.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-date">Desember 2024</div>
+        <div class="timeline-content">
+          <h3>Melewati Berbagai Tantangan</h3>
+          <p>Tidak semua hari selalu mudah, tetapi kita berhasil melewati banyak hal bersama.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-date">Juli 2025</div>
+        <div class="timeline-content">
+          <h3>Dua Tahun Bersama</h3>
+          <p>Dua tahun yang penuh kenangan, tawa, diskusi panjang, dan berbagai pengalaman baru.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-date">Juni 2026</div>
+        <div class="timeline-content">
+          <h3>Hampir Tiga Tahun</h3>
+          <p>Sampai hari ini, masih banyak hal yang patut disyukuri dari perjalanan yang sudah kita lalui.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COUNTDOWN ========== -->
+  <section id="countdown" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Dari Juli 2023 Hingga Hari Ini</h2>
+      <div class="section-divider">
+        <span class="divider-line"></span>
+        <span class="divider-flower">&#x2734;</span>
+        <span class="divider-line"></span>
+      </div>
+    </div>
+
+    <div class="countdown-wrapper" data-aos="zoom-in">
+      <div class="countdown-item">
+        <span class="countdown-number" id="countdown-days">00</span>
+        <span class="countdown-label">Hari</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="countdown-hours">00</span>
+        <span class="countdown-label">Jam</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="countdown-minutes">00</span>
+        <span class="countdown-label">Menit</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="countdown-seconds">00</span>
+        <span class="countdown-label">Detik</span>
+      </div>
+    </div>
+    <p class="countdown-text" data-aos="fade-up">Waktu terus berjalan, dan setiap harinya menambah cerita baru dalam perjalanan kita.</p>
+  </section>
+
+  <!-- ========== SURAT APRESIASI ========== -->
+  <section id="letters" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Surat Apresiasi</h2>
+      <div class="section-divider">
+        <span class="divider-line"></span>
+        <span class="divider-flower">&#x2734;</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="section-desc">Beberapa kata sebagai bentuk terima kasih untukmu.</p>
+    </div>
+
+    <div class="letters-grid">
+      <div class="letter-card" data-aos="flip-left" data-aos-delay="100">
+        <div class="letter-inner">
+          <div class="letter-front">
+            <span class="letter-icon">&#x2734;</span>
+            <p>Klik untuk membaca</p>
+          </div>
+          <div class="letter-back">
+            <p>
+              Terima kasih sudah hadir di banyak fase hidupku dan menjadi seseorang yang selalu bisa diajak berbagi cerita.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="letter-card" data-aos="flip-left" data-aos-delay="200">
+        <div class="letter-inner">
+          <div class="letter-front">
+            <span class="letter-icon">&#x2734;</span>
+            <p>Klik untuk membaca</p>
+          </div>
+          <div class="letter-back">
+            <p>
+              Terima kasih untuk semua waktu, perhatian, dan dukungan yang mungkin sering terlihat sederhana, tetapi selalu berarti.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="letter-card" data-aos="flip-left" data-aos-delay="300">
+        <div class="letter-inner">
+          <div class="letter-front">
+            <span class="letter-icon">&#x2734;</span>
+            <p>Klik untuk membaca</p>
+          </div>
+          <div class="letter-back">
+            <p>
+              Aku bersyukur karena selama hampir tiga tahun ini kita terus belajar memahami satu sama lain.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="letter-card" data-aos="flip-left" data-aos-delay="400">
+        <div class="letter-inner">
+          <div class="letter-front">
+            <span class="letter-icon">&#x2734;</span>
+            <p>Klik untuk membaca</p>
+          </div>
+          <div class="letter-back">
+            <p>
+              Semoga apa pun yang akan datang ke depannya, kita tetap bisa saling mendukung dan bertumbuh menjadi versi terbaik dari diri kita masing-masing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LAGU YANG MENGINGATKAN TENTANG KITA ========== -->
+  <section id="lagu-kita" class="section section-lagu">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Lagu yang Mengingatkan Tentang Kita</h2>
+      <div class="section-divider">
+        <span class="divider-line"></span>
+        <span class="divider-flower">&#x2734;</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="section-desc">Beberapa lagu tidak hanya menyimpan melodi, tetapi juga membawa kembali kenangan pada waktu-waktu tertentu.</p>
+    </div>
+    <div class="lagu-wrapper" data-aos="fade-up" data-aos-delay="200">
+      <iframe
+        id="soundcloud-iframe"
+        width="100%"
+        height="300"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay; encrypted-media"
+        src="about:blank">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-decoration" data-aos="fade-up">
+      <span class="decoration-line"></span>
+      <span class="decoration-flower">&#x2734;</span>
+      <span class="decoration-line"></span>
+    </div>
+    <p class="footer-text" data-aos="fade-up">
+      Terima kasih untuk semua cerita, tawa, pelajaran, dan kenangan yang telah kita lalui bersama sejak Juli 2023.
+    </p>
+    <p class="footer-subtext" data-aos="fade-up">
+      Semoga halaman kecil ini bisa menjadi pengingat bahwa setiap perjalanan memiliki cerita yang layak untuk dikenang.
+    </p>
+    <p class="footer-copyright" data-aos="fade-up">
+      Untuk Nayla Aulia Zahra &mdash; Juni 2026
+    </p>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
