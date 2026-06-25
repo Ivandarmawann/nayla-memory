@@ -16,33 +16,57 @@ AOS.init({
 });
 
 /* ================================================================
-   2. WELCOME SCREEN + SOUNDCLOUD AUTOPLAY
+   2. WELCOME SCREEN + TOAST NOTIFICATION
    ================================================================ */
 (function handleWelcomeScreen() {
   const welcome = document.getElementById('welcome-screen');
   const btn = document.getElementById('welcome-btn');
-  const scIframe = document.getElementById('soundcloud-iframe');
+  const toast = document.getElementById('toast');
+  const toastClose = document.getElementById('toast-close');
+  const toastScroll = document.getElementById('toast-scroll');
 
   if (!welcome || !btn) return;
-
-  const SC_EMBED_URL = 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2338237430&color=%23ffb6d9&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true';
 
   btn.addEventListener('click', () => {
     welcome.classList.add('hidden');
     document.body.classList.add('welcome-done');
 
-    // Trigger SoundCloud autoplay setelah user interaction
-    if (scIframe) {
-      scIframe.src = SC_EMBED_URL;
-    }
-
     // Scroll ke atas
     window.scrollTo({ top: 0, behavior: 'smooth' });
     // Refresh AOS agar animasi hero berjalan
     setTimeout(() => AOS.refresh(), 400);
-    // Hapus dari DOM setelah transisi
+    // Hapus welcome dari DOM setelah transisi
     setTimeout(() => welcome.remove(), 800);
+
+    // Munculkan toast setelah welcome selesai fade out
+    setTimeout(() => {
+      if (toast) {
+        toast.classList.add('visible');
+        // Auto-hide setelah 5 detik
+        setTimeout(() => {
+          toast.classList.remove('visible');
+        }, 5000);
+      }
+    }, 900);
   });
+
+  // Tombol tutup toast
+  if (toastClose) {
+    toastClose.addEventListener('click', () => {
+      toast.classList.remove('visible');
+    });
+  }
+
+  // Tombol scroll ke section musik
+  if (toastScroll) {
+    toastScroll.addEventListener('click', () => {
+      toast.classList.remove('visible');
+      const musicSection = document.getElementById('lagu-kita');
+      if (musicSection) {
+        musicSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
 })();
 
 /* ================================================================
